@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup and Login Form</title>
+    <!-- Add stylesheet here -->
+    <link rel="stylesheet" href="./signup-login.css">
+</head>
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk">
+
+        <!-- Signup Form -->
+        <div class="signup">
+            <form id="signupForm">
+                <label for="chk">Sign up</label>
+                <input type="text" id="signupUsername" placeholder="User name" required>
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Login Form -->
+        <div class="login">
+            <form id="loginForm">
+                <label for="chk">Login</label>
+                <input type="text" id="loginEmail" placeholder="Email or User name" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="./signup-login.html">Create account</a>.</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+

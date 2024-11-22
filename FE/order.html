@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Management</h1>
+
+        <form id="create-order-form">
+            <h2>Create New Order</h2>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="number" placeholder="Phone Number" required>
+            <input type="number" id="quantity" placeholder="Quantity" required>
+            <input type="text" id="order" placeholder="Order Details" required>
+            <textarea id="address" placeholder="Shipping Address" required></textarea>
+            <button type="submit">Create Order</button>
+        </form>
+
+        <form id="update-order-form">
+            <h2>Update Order</h2>
+            <input type="text" id="update-id" placeholder="Order ID" required>
+            <input type="text" id="update-order" placeholder="New Order Details" required>
+            <textarea id="update-address" placeholder="New Address"></textarea>
+            <button type="submit">Update Order</button>
+        </form>
+        <form id="delete-order-form">
+            <h2>Delete Order</h2>
+            <input type="text" id="delete-id" placeholder="Order ID to delete" required>
+            <button type="submit">Delete Order</button>
+        </form>
+        <form id="fetch-order-form">
+            <h2>Fetch Order</h2>
+            <input type="text" id="fetch-id" placeholder="Order ID to fetch" required>
+            <button type="submit">Fetch Order</button>
+        </form>
+        <div id="order-result"></div>
+    </div>
+    <script src="/FE/order.js"></script>
+</body>
+</html>
